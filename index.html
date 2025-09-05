@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>English Learning Website</title>
+    <link rel="shortcut icon" href="/logo.png" type="image/x-icon" />
+
+    <!-- fond awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- fond poppins and hind siliguri  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- tailwind and daisyUi link  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="flex justify-center items-center gap-3">
+        <img src="/logo.png" alt="" />
+        <h1>English Learning Website</h1>
+      </div>
+
+      <nav>
+        <a href="#vocab">Vocabulary</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+    </header>
+
+    <section class="intro" id="home">
+      <div class="intro-text p-5 space-x-5">
+        <h2>English is Easy!!</h2>
+        <p>
+          Start learning and improving your vocabulary with interactive
+          flashcards and FAQs.
+        </p>
+        <button class="start-btn" onclick="scrollToSection('vocab')">
+          Let's Learn
+        </button>
+      </div>
+      <div>
+        <!-- Placeholder for an illustrative image -->
+        <img
+          src="/WhatsApp Image 2025-09-01 at 20.55.06_1736f5a4.jpg"
+          alt="Person learning"
+          width="300"
+        />
+      </div>
+    </section>
+
+    <section class="vocab-section" id="vocab">
+      <div class="vocab-title">Let's Learn Vocabulary</div>
+      <div class="cards-container" id="vocab-cards">
+        <!-- Vocabulary cards will be inserted here by JavaScript -->
+      </div>
+    </section>
+
+    <section class="faq-section" id="faq">
+      <div class="faq-title">Frequently Asked Questions</div>
+      <div class="faq" id="faq-list">
+        <div class="question" onclick="toggleAnswer(0)">
+          What is the best way to learn vocabulary?
+        </div>
+        <div class="answer">
+          Consistent practice with flashcards, reading, and usage helps improve
+          vocabulary effectively.
+        </div>
+        <div class="question" onclick="toggleAnswer(1)">
+          How often should I review words?
+        </div>
+        <div class="answer">
+          Review words regularly, ideally daily, to reinforce memory and
+          retention.
+        </div>
+        <div class="question" onclick="toggleAnswer(2)">
+          Can I learn vocabulary without a teacher?
+        </div>
+        <div class="answer">
+          Yes! Self-study with flashcards, apps, and reading materials is very
+          effective.
+        </div>
+      </div>
+    </section>
+
+    <footer>&copy; 2025 English Learning Website. All rights reserved.</footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>

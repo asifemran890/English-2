@@ -1,0 +1,144 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+header {
+  background-color: #4f6d7a;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  gap: 15px;
+}
+
+nav a {
+  color: #f0f0f0;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.intro {
+  width: 1140px;
+  margin: auto;
+  justify-content: space-between;
+  padding: 40px 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.intro-text {
+  max-width: 60%;
+}
+
+.intro h2 {
+  margin-top: 0;
+}
+
+.start-btn {
+  background-color: #4f6d7a;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.vocab-section {
+  padding: 20px;
+  width: 1140px;
+  margin: auto;
+}
+
+.vocab-title {
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s;
+  padding: 50px;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+}
+
+.question {
+  font-weight: bold;
+}
+
+.answer {
+  margin-top: 10px;
+  display: none;
+}
+
+.answer.show {
+  display: block;
+}
+
+.faq-section {
+  padding: 20px;
+}
+
+.faq-title {
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+
+.faq {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.question {
+  padding: 10px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Footer styling */
+footer {
+  background-color: #4f6d7a;
+  color: #f0f0f0;
+  text-align: center;
+  padding: 15px 20px;
+  margin-top: 40px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .intro {
+    flex-direction: column;
+  }
+  .intro-text {
+    max-width: 100%;
+  }
+}
